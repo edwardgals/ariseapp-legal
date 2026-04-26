@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Arise</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --sunrise: #F9C97A;
+    --amber:   #F08040;
+    --ember:   #C4431A;
+    --cream:   #FAF7F2;
+    --ink:     #1A1A1A;
+    --muted:   #888;
+    --border:  #EDE8E0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  header {
+    background: linear-gradient(160deg, var(--sunrise) 0%, var(--amber) 50%, var(--ember) 100%);
+    padding: 60px 40px 48px;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: rgba(255,244,224,0.9);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 600;
+    color: #FFF4E0;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  header p {
+    font-size: 14px;
+    color: rgba(255,244,224,0.75);
+    letter-spacing: 0.5px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  .intro {
+    font-size: 18px;
+    color: var(--ember);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section {
+    margin-bottom: 44px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--ember);
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+
+  p { margin-bottom: 14px; color: #444; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 12px 0;
+  }
+
+  ul li {
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid #F0EBE3;
+    color: #444;
+    position: relative;
+    font-size: 15px;
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+    font-size: 12px;
+    top: 9px;
+  }
+
+  .highlight-box {
+    background: #FFF3EC;
+    border-left: 3px solid var(--ember);
+    padding: 20px 24px;
+    border-radius: 0 12px 12px 0;
+    margin: 20px 0;
+    font-size: 15px;
+    color: #5a3020;
+    line-height: 1.7;
+  }
+
+  a { color: var(--ember); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .contact-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-top: 16px;
+  }
+
+  .contact-card p { margin: 4px 0; font-size: 15px; }
+  .contact-card .label { font-size: 11px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; margin-bottom: 8px; }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  footer span {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgba(249,201,122,0.7);
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Arise</div>
+  <h1>Terms of Service</h1>
+  <p>Last updated: April 26, 2026</p>
+</header>
+
+<main>
+
+  <p class="intro">
+    These terms describe the agreement between you and Arise.
+    By using the app, you accept them — please read them carefully.
+  </p>
+
+  <section>
+    <h2>Acceptance of Terms</h2>
+    <p>By creating an account, downloading, installing, or using the Arise mobile application (the "Service"), you agree to be bound by these Terms of Service ("Terms") and our <a href="privacy.html">Privacy Policy</a>.</p>
+    <p>If you do not agree to these Terms, please do not use the Service.</p>
+  </section>
+
+  <section>
+    <h2>Eligibility</h2>
+    <p>You must be at least 13 years old to create an Arise account on your own. If you are under 13, you may only use Arise as a member of a Family Plan that is set up and managed by a parent or legal guardian.</p>
+    <p>By using the Service, you represent and warrant that you meet these eligibility requirements.</p>
+  </section>
+
+  <section>
+    <h2>Your Account</h2>
+    <p>You are responsible for:</p>
+    <ul>
+      <li>Maintaining the confidentiality of your password</li>
+      <li>All activity that occurs under your account</li>
+      <li>Providing accurate, current, and complete information at signup</li>
+      <li>Notifying us promptly if you suspect unauthorized access</li>
+    </ul>
+    <p>We reserve the right to suspend or terminate accounts that violate these Terms or that we reasonably believe are being used to harm other users or our service.</p>
+  </section>
+
+  <section>
+    <h2>Subscription & Billing</h2>
+    <p>Arise offers two paid plans, both with a 3-day free trial:</p>
+    <ul>
+      <li><strong>Individual</strong> — $16.99 USD per year</li>
+      <li><strong>Family</strong> — $24.99 USD per year, up to 6 members</li>
+    </ul>
+    <p>All purchases are processed through the Apple App Store or Google Play, and are subject to those platforms' terms. Prices in your local currency may differ.</p>
+    <div class="highlight-box">
+      Your free trial ends after 3 days. If you do not cancel before the trial ends, your subscription will auto-renew at the price shown above. You can cancel any time from your device's subscription settings.
+    </div>
+    <p><strong>Auto-renewal:</strong> Subscriptions renew automatically each year unless you cancel at least 24 hours before the end of the current period. The renewal charge appears on the same payment method you used to subscribe.</p>
+    <p><strong>Managing your subscription:</strong> You can view, change, or cancel your subscription in your device settings:</p>
+    <ul>
+      <li><strong>iOS</strong> — Settings → [Your Name] → Subscriptions</li>
+      <li><strong>Android</strong> — Google Play app → Profile → Payments &amp; subscriptions → Subscriptions</li>
+    </ul>
+    <p><strong>Refunds:</strong> Refund requests are handled by Apple or Google according to their respective policies. We are not able to issue refunds directly.</p>
+  </section>
+
+  <section>
+    <h2>Family Plan</h2>
+    <p>The Family Plan allows you to invite up to 6 members to share a subscription. The plan owner ("parent") is the billing contact and is responsible for the entire family group.</p>
+    <ul>
+      <li>The parent invites members by email; invitees can accept or decline</li>
+      <li>Children under 13 may only join when the parent sets up the account on their behalf</li>
+      <li>Family members can see each other's alarm times, streaks, and daily completion status</li>
+      <li>The parent can remove any member at any time</li>
+      <li>If the parent cancels the subscription, all members lose access at the end of the billing period</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Acceptable Use</h2>
+    <p>When using Arise, you agree not to:</p>
+    <ul>
+      <li>Reverse-engineer, decompile, or attempt to extract the source code of the app</li>
+      <li>Use the app to harass, harm, or impersonate others</li>
+      <li>Interfere with or disrupt the Service or its servers</li>
+      <li>Bypass billing, authentication, or family-membership restrictions</li>
+      <li>Use the app for any unlawful purpose</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Intellectual Property</h2>
+    <p>Arise, the Arise logo, the gratitude content, the design of the app, and the underlying software are owned by Arise App and are protected by copyright, trademark, and other intellectual property laws.</p>
+    <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the app for your personal, non-commercial purposes, subject to these Terms.</p>
+    <p>Anything you create within the app (your custom alarm labels, for example) remains yours.</p>
+  </section>
+
+  <section>
+    <h2>Alarm Reliability — Important</h2>
+    <p>Arise schedules alarm notifications using the operating system's notification service. While we make every reasonable effort to ensure alarms ring on time, we cannot guarantee delivery in every circumstance.</p>
+    <p>Alarms may not fire as expected if:</p>
+    <ul>
+      <li>The device is powered off, in airplane mode, or has Do Not Disturb enabled</li>
+      <li>Notification permissions for Arise have been revoked</li>
+      <li>The operating system schedules background tasks differently to save battery</li>
+      <li>The device's clock or time zone is incorrect</li>
+      <li>The app has been force-closed and the OS has not yet rescheduled its alarms</li>
+    </ul>
+    <div class="highlight-box">
+      Arise is intended as a mindful morning aid, not a critical wake-up service. For situations where missing an alarm would have serious consequences, please use a redundant backup such as a separate alarm clock.
+    </div>
+  </section>
+
+  <section>
+    <h2>Disclaimers</h2>
+    <p>The Service is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+    <p>We do not warrant that the Service will be uninterrupted, error-free, or free of harmful components, or that any defects will be corrected.</p>
+    <p>The gratitude content provided in Arise is offered as a wellness and mindfulness aid. It is not professional, medical, religious, or therapeutic advice.</p>
+  </section>
+
+  <section>
+    <h2>Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Arise App and its officers, directors, employees, and agents will not be liable for any indirect, incidental, special, consequential, or punitive damages — including lost profits, lost data, or alarm-related missed obligations — arising out of or related to your use of, or inability to use, the Service.</p>
+    <p>In no event will our total liability for any claim arising from these Terms or your use of the Service exceed the amount you paid us for the Service in the twelve months preceding the claim.</p>
+  </section>
+
+  <section>
+    <h2>Termination</h2>
+    <p>You may terminate your use of Arise at any time by deleting your account from within the app (Settings → Delete account) or by uninstalling the app.</p>
+    <p>We may suspend or terminate your access to the Service if we reasonably believe you have violated these Terms, with or without notice. Upon termination, your right to use the Service ends immediately.</p>
+    <p>Sections of these Terms that by their nature should survive termination — including Intellectual Property, Disclaimers, and Limitation of Liability — will survive.</p>
+  </section>
+
+  <section>
+    <h2>Changes to These Terms</h2>
+    <p>We may update these Terms as the Service evolves. When we make material changes, we will notify you by updating the "Last updated" date at the top of this page and, where appropriate, by sending an in-app or email notice.</p>
+    <p>Continued use of the Service after changes are posted constitutes acceptance of the updated Terms. If you do not agree, you should stop using the Service and delete your account.</p>
+  </section>
+
+  <section>
+    <h2>Governing Law</h2>
+    <p>These Terms are governed by the laws of the jurisdiction in which Arise App is registered, without regard to conflict-of-law principles. Any dispute arising under these Terms will be resolved in the courts of that jurisdiction, unless local consumer-protection law requires otherwise.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Questions or concerns about these Terms? Get in touch:</p>
+    <div class="contact-card">
+      <p class="label">Arise App</p>
+      <p>📧 <a href="mailto:hello@arisapp.com">hello@arisapp.com</a></p>
+      <p>🌐 <a href="https://arisapp.com">arisapp.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>Arise — Grateful Mornings</span>
+  © 2026 Arise App. All rights reserved.
+</footer>
+
+</body>
+</html>
