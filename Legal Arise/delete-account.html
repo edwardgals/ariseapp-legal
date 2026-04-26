@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete your Arise account</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --sunrise: #F9C97A;
+    --amber:   #F08040;
+    --ember:   #C4431A;
+    --cream:   #FAF7F2;
+    --ink:     #1A1A1A;
+    --muted:   #888;
+    --border:  #EDE8E0;
+    --danger:  #B33E3E;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: linear-gradient(160deg, var(--sunrise) 0%, var(--amber) 50%, var(--ember) 100%);
+    padding: 60px 40px 48px;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: rgba(255,244,224,0.9);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 600;
+    color: #FFF4E0;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  header p {
+    font-size: 14px;
+    color: rgba(255,244,224,0.85);
+    letter-spacing: 0.5px;
+  }
+
+  main {
+    flex: 1;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 64px;
+    width: 100%;
+  }
+
+  .intro {
+    font-size: 17px;
+    color: var(--ember);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section { margin-bottom: 36px; }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 14px;
+    letter-spacing: -0.3px;
+  }
+
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--ember);
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+
+  p { margin-bottom: 14px; color: #444; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 12px 0;
+  }
+
+  ul li {
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid #F0EBE3;
+    color: #444;
+    position: relative;
+    font-size: 15px;
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+    font-size: 12px;
+    top: 9px;
+  }
+
+  .warning-box {
+    background: #FFF3EC;
+    border-left: 3px solid var(--danger);
+    padding: 18px 22px;
+    border-radius: 0 12px 12px 0;
+    margin: 18px 0;
+    font-size: 15px;
+    color: #6a2828;
+    line-height: 1.65;
+  }
+
+  .quick-tip {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 24px 0 32px;
+  }
+
+  .quick-tip .label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .quick-tip h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .quick-tip p { font-size: 14px; }
+
+  form {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px;
+    margin-top: 12px;
+  }
+
+  label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 14px 0 6px;
+  }
+
+  label:first-child { margin-top: 0; }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    color: var(--ink);
+    transition: border-color 0.15s ease;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--ember);
+  }
+
+  textarea { min-height: 90px; resize: vertical; line-height: 1.6; }
+
+  .checkbox-row {
+    margin-top: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  .checkbox-row input[type="checkbox"] {
+    width: auto;
+    margin-top: 4px;
+    accent-color: var(--ember);
+  }
+
+  button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 16px;
+    background: var(--danger);
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.05s ease;
+  }
+
+  button:hover { opacity: 0.92; }
+  button:active { transform: translateY(1px); }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  a { color: var(--ember); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  footer span {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgba(249,201,122,0.7);
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Arise</div>
+  <h1>Delete your account</h1>
+  <p>We're sorry to see you go.</p>
+</header>
+
+<main>
+
+  <p class="intro">
+    You can permanently delete your Arise account and all associated data
+    by submitting the form below — no app required.
+  </p>
+
+  <section>
+    <h2>What gets deleted</h2>
+    <p>When we process your deletion request, the following is permanently removed from our systems within 30 days:</p>
+    <ul>
+      <li>Your Arise account and email address</li>
+      <li>All of your alarm settings, labels, and schedules</li>
+      <li>Your daily gratitude completion records and streak history</li>
+      <li>Your subscription state inside Arise</li>
+      <li>Your push notification token</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What we're not able to delete from here</h2>
+    <ul>
+      <li>Apple App Store / Google Play subscription billing — cancel separately in your device's subscription settings</li>
+      <li>Email correspondence you've sent to us (kept for support and legal records)</li>
+    </ul>
+  </section>
+
+  <div class="warning-box">
+    <strong>This is permanent.</strong> Once your account is deleted we cannot restore it, your alarms, or your streak. You'll need to sign up again from scratch if you change your mind.
+  </div>
+
+  <div class="quick-tip">
+    <div class="label">Faster option</div>
+    <h3>Still have the app installed?</h3>
+    <p>You can delete your account instantly from inside Arise: Profile&nbsp;tab → Settings → Delete account. The form below is for users who no longer have access to the app.</p>
+  </div>
+
+  <section>
+    <h2>Request deletion</h2>
+    <p>Fill in your details and we'll process your deletion within 30 days. You'll receive a confirmation email when it's complete.</p>
+
+    <form id="deletion-form" onsubmit="return submitDeletion(event)">
+      <label for="email">Account email</label>
+      <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+
+      <label for="name">Your name (optional)</label>
+      <input id="name" name="name" type="text" placeholder="So we can address you in the confirmation" autocomplete="name">
+
+      <label for="reason">Why are you leaving? (optional)</label>
+      <textarea id="reason" name="reason" placeholder="Anything that didn't work for you — we read every reply."></textarea>
+
+      <div class="checkbox-row">
+        <input id="confirm" name="confirm" type="checkbox" required>
+        <label for="confirm" style="margin: 0; text-transform: none; letter-spacing: 0; color: #444; font-size: 14px;">
+          I understand my account, alarms, and streak history will be permanently deleted and cannot be recovered.
+        </label>
+      </div>
+
+      <button type="submit">Submit deletion request</button>
+    </form>
+  </section>
+
+  <p style="margin-top: 36px; font-size: 14px; color: var(--muted); text-align: center;">
+    Questions? Email <a href="mailto:privacy@arisapp.com">privacy@arisapp.com</a>.<br>
+    See also our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.
+  </p>
+
+</main>
+
+<footer>
+  <span>Arise — Grateful Mornings</span>
+  © 2026 Arise App. All rights reserved.
+</footer>
+
+<script>
+  // No backend yet — open the user's email client with a pre-filled message
+  // so the request reaches privacy@arisapp.com. Once a serverless endpoint
+  // exists (e.g. a Firebase Function) this can POST directly instead.
+  function submitDeletion(e) {
+    e.preventDefault();
+    var email = document.getElementById('email').value.trim();
+    var name = document.getElementById('name').value.trim();
+    var reason = document.getElementById('reason').value.trim();
+    var confirmed = document.getElementById('confirm').checked;
+    if (!email || !confirmed) return false;
+
+    var subject = 'Arise account deletion request';
+    var body =
+      'Account email to delete: ' + email + '\n' +
+      (name ? 'Name: ' + name + '\n' : '') +
+      (reason ? '\nReason for leaving:\n' + reason + '\n' : '') +
+      '\nI confirm I understand this is permanent.\n';
+
+    var url = 'mailto:privacy@arisapp.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+
+    window.location.href = url;
+    return false;
+  }
+</script>
+
+</body>
+</html>
